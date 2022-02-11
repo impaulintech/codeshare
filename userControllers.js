@@ -49,7 +49,7 @@ module.exports = {
 
             for (let i = 0; i < allOrders.length; i++) {
                 if (allOrders[i].orders.length >= 1) {
-                    allActiveOrders.push(allOrders[i].orders)
+                    allActiveOrders.push(allOrders[i])
                 }
             }
 
