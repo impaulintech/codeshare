@@ -1,0 +1,246 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Button styling zone */
+.hello {
+    font-size: 30px;
+    text-shadow: 1px 1px #000000;
+}
+
+.heading {
+    font-size: 69px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px #FF0066;
+}
+
+.sub {
+    font-family: verdana;
+    font-size: 21px;
+    width: 500px;
+    line-height: 30px;
+    text-shadow: 1px 1px #000000;
+}
+
+.fancy {
+    background-color: transparent;
+    border: 2px solid #FF0066;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #FF0066;
+    cursor: pointer;
+    float: left;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+}
+
+#fancy {
+    text-decoration: none;
+}
+
+.fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+}
+
+.fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+}
+
+.fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+
+.fancy:hover {
+    color: white;
+    background: #FF0066;
+}
+
+.fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+}
+
+.fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+}
+
+.fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+}
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+}
+
+/* End button styling */
+
+/* Contact Page Zone */
+#contact {
+    color: #fff;
+    padding: 30px 0;
+    overflow-x: hidden;
+}
+
+.contact-heading::before {
+    content: "Contact";
+    border-bottom: 5px solid #FF0066;
+}
+
+.me2-heading::before {
+    content: " Me";
+    padding-bottom: 20px;
+    border-bottom: 5px solid #FF0066;
+}
+
+.contact-form {
+    margin-bottom: 50px;
+}
+
+.acc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ul-ukay-contact {
+    padding-left: 16px;
+    padding-bottom: 60px;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+             margin-right: 15px;
+                  opacity: 0.6;
+  }
+.made-with {
+    text-transform: uppercase;
+    font-size: 30px;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px #FF0066;
+}
+
+.connect {
+    border-left: 2px solid white;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.connect>a {
+    text-decoration: none;
+}
+
+.cp2 {
+    display: none;
+}
+
+/* End Contact Page */
+/* Support styling for mobile view  */
+@media screen and (max-width: 800px) {
+
+    .heading {
+        font-size: 69px;
+        font-weight: 500;
+        letter-spacing: 6px;
+    }
+
+    .img {
+        height: 500px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .cp {
+        display: block;
+    }
+
+    .cp2 {
+        display: block;
+    }
+
+    .ul-ukay {
+        margin-left: 10px;
+    }
+
+    .contact-heading::before {
+        font-size: 45px;
+    }
+
+    .me2-heading::before {
+        font-size: 45px;
+    }
+
+    .ukay-mb {
+        padding-left: 0px;
+    }
+
+}
+
+/* End Media query */
